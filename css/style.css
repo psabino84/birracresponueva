@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+/******************* MEDIA QUERYS ************************/
+
+@media screen and (max-width: 640px) {
+
+  .nuestras-grid{
+
+    grid-template-columns: 0.5fr 1fr;
+  }   
+  .nosotros-texto {
+      font-size: 14px;
+  }
+
+  .img-menu {
+    display: none;
+  }
+
+  .titulo-menu {
+      font-size: 12px;
+      font-weight: bold;
+  }
+
+  .menu_uno, .menu_tres,
+  .menu_cinco {
+      margin-left: 5px;
+  }
+
+   h5 {
+      font-size: 12px;
+  }
+    .birra-crespo-h1 {
+      font-size: 30px;
+  }
+    h3, .subtitulo {
+        font-size: 14px;
+  }
+    
+    .tipo-cervezas {
+        display: none;
+  }
+
+    .listado-tragos {
+        font-size: 10px;
+        margin: 0px;
+    }
+
+    .alineacion {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .biira-crespo-h1, .subtitulo {
+        margin-top: 100px;
+    }
+   
+    .titulo-menu {
+        font-size: 16px;
+        font-weight: bold;
+    }
+  
+     .descripcion-menu {
+        font-size: 22px;
+    }
+
+    .img-menu {
+        height: 25px;
+        width: 25px;
+    }
+
+    .menu_uno, .menu_tres,
+    .menu_cinco {
+      margin-left: 12px;
+    }
+
+    .porcentaje {
+        font-size: 14px;
+    }
+
+    .listado-tragos {
+        font-size: 10px;
+    }
+
+    .menu-grid {
+        grid-row-gap: 10    px;
+    }
+}
+/******************* FIN MEDIA QUERYS ********************/
+
+                    /* CONTENEDORES  */
+.main-container, .menu-container,  
+.nuestras-container, .tragos-container, .nosotros-container {
+    display: flex;
+}
+                /*  FIN DE CONTENEDORES  */
+
+            /*  MARGENES CON IMAGEN DE FONDO  */
+
+.menu-izquierda,
+.nuestras-derecha, .tragos-izquierda, .nosotros-derecha  {
+    width: 25%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+            /*  MARGENES FONDO DE PANTALLA COLOR  */
+
+.menu-derecha, .nuestras-izquierda,
+.tragos-derecha, .nosotros-izquierda {
+    background-color: #FCD21D;
+    width: 75%;
+    height: 90vh;
+}
+/******************** COMIENZO DE LA WEB *******************/
+
+/*  COMIENZO DEL HEADER  */
+
+.nav-link {
+    margin-left: 30px;
+}
+
+.nav-link:hover {
+    background-color: #FCD21D;
+    opacity: 0.7;
+    transition: all 0.3;
+    border-radius: 5px;
+
+}
+
+.navbar {
+    background-color: whitesmoke;
+}
+
+/*  FIN DEL HEADER  */
+
+/* COMIENZO INDEX */
+.margen-izquierdo {
+    background-color: #FCD21D;
+    width: 50%;
+    height: 90vh;
+}
+
+.margen-derecho {
+    background: url(../img/pexels-photo-1089930.jpeg);
+    width: 50%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+h1, h3 {
+    margin: 80px 30px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+}
+
+/* FIN DE INDEX */
+
+/*  COMIENZO SECCION MENU  */
+.menu-izquierda {
+    background: url(../img/menu-izquierda.jpeg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.menu-uno {
+    display: flex;
+    margin-left: 20px;
+}
+
+.titulo-menu {
+    text-align: left;
+}
+
+.img-menu-listado {
+    display: flex;
+}
+.img-menu {
+    width: 140px;
+    height: 100px;
+    border-radius: 25px;
+    margin: 30px;
+}
+
+.img-menu:hover {
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.descripcion-menu{
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 100;
+    margin: 0px;
+}
+
+/*  FIN SECCION MENU  */
+
+/*  COMIENZO SECCION NUESTRAS CERVEZAS  */
+
+.nuestras-derecha {
+    background: url(../img/ntrasCervezas.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.tipo-cervezas {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+}
+.nuestras-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.nuestras-grid div {
+    margin-top: 40px;
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.porcentaje {
+    text-align: center;
+    margin: 0px;
+}
+
+/*  FIN SECCION NUESTRAS CERVEZAS  */
+
+/*  COMIENZO SECCION TRAGOS  */
+
+.tragos-izquierda {
+    background: url(../img/seccion_tragos.jpeg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.tragos-barra {
+    border: dotted 1px black;
+    margin: 5px 20px;
+}
+
+.tragos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+}
+.listado-tragos {
+    line-height: 40px;
+    text-align: left;
+    margin: 0px 20px;
+    
+}
+/*  FIN SECCION TRAGOS  */
+
+/*  COMIENZO SECCION SOBRE NOSOTROS  */
+
+.nosotros-derecha {
+    background: url(../img/quienes_somos.jpeg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.resaltar {
+    font-weight: bold;
+}
